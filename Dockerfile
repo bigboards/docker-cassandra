@@ -1,7 +1,7 @@
 FROM bigboards/java-8-__arch__
 
 # explicitly set user/group IDs
-RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassandra
+RUN groupadd -r cassandra --gid=998 && useradd -r -g cassandra --uid=998 cassandra
 
 # grab gosu for easy step-down from root
 ENV GOSU_VERSION 1.7

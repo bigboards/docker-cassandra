@@ -13,7 +13,7 @@ RUN groupadd -r cassandra --gid=999 && useradd -r -g cassandra --uid=999 cassand
 # hadoop
 RUN set -x \
     && curl -s http://www-us.apache.org/dist/cassandra/3.7/apache-cassandra-3.7-bin.tar.gz | tar -xz -C /opt \
-    && ln -s /opt/apache-cassandra-3.7 /opt/apache-cassandra
+    && ln -s /opt/apache-cassandra-3.7 /opt/apache-cassandra \
     && ln -s /opt/apache-cassandra-3.7 /opt/cassandra
 
 # 7000: intra-node communication
